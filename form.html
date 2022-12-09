@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+
+
+<script>
+
+<!--
+alert ("Fill out the form")
+//-->
+
+
+
+function validateForm() {
+  let a = document.forms["myForm"]["fname"].value;
+  if (a == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  let b = document.forms["myForm"]["email"].value;
+  if (b == "") {
+    alert("Enter your email");
+    return false;
+  }
+
+  let c = document.forms["myForm"]["pass"].value;
+  if (c == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+
+  let d = document.forms["myForm"]["cpass"].value;
+  if (d == "") {
+    alert("Enter Password again");
+    return false;
+  }
+
+  let e = document.forms["myForm"]["age"].value;
+  if (e == "") {
+    alert("Select age");
+    return false;
+  }
+
+
+  let f = document.forms["myForm"]["gender"].value;
+  if (f == "") {
+    alert("Select Gender");
+    return false;
+  }
+
+  
+}
+
+
+
+
+
+// to change background color every 5 seconds 
+var count=0;
+function cbg()
+{
+setTimeout("col()",5000);
+}
+function col()
+{
+var a =new 
+Array("red","darkblue","sky","yellow","blue","pink","green");
+if(count<=6)
+{
+document.bgColor=a[count++];
+setTimeout("col()",5000);
+}
+else
+{
+count=0;
+cbg();
+}
+}
+
+
+</script>
+
+
+
+
+<body bgcolor=black onload=cbg()>
+    
+    <!-- Header Start -->
+    <header>
+        <div class="logo_header">
+            <img src="src/img/logo.png" alt="">
+        </div>
+    </header>
+
+    <!-- Header End-->
+
+    <!-- Navbar Start -->
+    <nav>
+        <ol>
+            <li><a href="index.html" title="Go back to home">Home</a></li>
+            <li><a href="form.html" title="Background Changes every 5 sec">Form</a></li>
+            
+        </ol>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Body Content Start -->
+
+    <div class="container">
+        <div class="heading">
+            <h3>Student<span> Registration </span> Form</h3>
+        </div>
+        <div class="box">
+            <form action="formsubmit.html" name="myForm" onsubmit="return validateForm()" method="get">
+                <div class="user-details">
+
+                  <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" name="fname" placeholder="Enter your name" >
+                  </div>
+
+                  
+                  <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" name="email" placeholder="Enter your email">
+                  </div>
+
+
+                  <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" name="pass" placeholder="Enter your password" >
+                  </div>
+
+                  <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" name="cpass" type="password" placeholder="Enter your password again" >
+                  </div>
+
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your number" >
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Alternate Number</span>
+                    <input type="text" placeholder="Enter your number" >
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Age</span>
+                    <input type="number" placeholder="Enter your age" >
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Favorite Subject</span>
+                    <input type="text" placeholder="Enter your favorite subject" >
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Favorite Movie</span>
+                    <input type="text" placeholder="Enter your favorite movie" >
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Favorite Singer</span>
+                    <input type="text" placeholder="Enter your favorite singer" >
+                  </div>
+                </div>
+                <div class="gender-details">
+                  <input type="radio" name="gender" id="dot-1">
+                  <input type="radio" name="gender" id="dot-2">
+                  <input type="radio" name="gender" id="dot-3">
+                  <span class="gender-title">Gender</span>
+                  <div class="category">
+                    <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male </span>
+                  </label>
+                  
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Prefer not to say</span>
+                    </label>
+                  </div>
+                </div>
+
+
+                
+                <div class="hobbies_select">
+                    <span>Hobbies</span>
+                    <br>
+                    <div class="hobbies_category">
+                    <label for="hobbies">Cricket</label>
+                    <input type="checkbox" name="" id="">
+
+                    <label for="hobbies">Football</label>
+                    <input type="checkbox" name="" id="">
+
+                    <label for="hobbies">Hockey</label>
+                    <input type="checkbox" name="" id="">
+
+                    <label for="hobbies">BasketBall</label>
+                    <input type="checkbox" name="" id="">
+
+                    <label for="hobbies">Other</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+
+                </div>
+
+
+                <div class="button">
+                  <input type="submit" value="Submit">
+                </div>
+
+
+              </form>
+            </div>
+
+    
+
+</body>
+</html>

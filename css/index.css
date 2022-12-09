@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Taviraj', serif;
+}
+
+#container {
+    display: flex;
+    
+
+    width: 100%;
+    height: 30vh;
+    
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    top: 0;
+    bottom: 0;
+    
+    filter: url(#threshold) blur(0.6px);
+
+    background: black;
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    margin-top: 1em;
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+
+    color: #AAC4FF;
+}
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: black;
+   
+}
+
+header{
+   display: flex;
+   flex-direction: row;
+   background: #AAC4FF;
+}
+
+.logo_header{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;  
+}
+
+.logo_header img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+nav{
+    background: black;
+    
+}
+nav ol{
+    
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;  
+}
+
+nav li{
+    list-style: none;
+    padding: 10px;
+    
+}
+nav a{
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+
+.container{
+    margin-bottom: 3em;
+}
+
+.paragraphs_container1{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.04);
+    
+}
+
+.paragraphs_title1{
+    color: white;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.paragraph1_heading h1{
+    color: white;
+}
+.paragraph2_heading h1{
+    color: white;
+}
+.paragraph3_heading h1{
+    color: white;
+}
+
+.paragraphs_container2{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.paragraphs_title2{
+    color: white;
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+.paragraph4_heading h1{
+    color: white;
+}
+.paragraph5_heading h1{
+    color: white;
+}
+.paragraph6_heading h1{
+    color: white;
+}
+
+#para4{
+    background: #EEF1FF;
+    border-radius: 17px; 
+    padding: 15px; 
+    text-align:justify;
+}
+
+#para5{
+    background: #D2DAFF;
+    border-radius: 17px; 
+    padding: 15px; 
+    text-align:justify;
+}
+
+#para6{
+    background: #AAC4FF;
+    border-radius: 17px; 
+    padding: 15px; 
+    text-align:justify;
+    
+}
+
+.btn_action1{
+
+}
+
+.btn_action2{
+
+}
+
+.btn_action3{
+
+}
+
+button{
+    cursor: pointer;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    border: 1px solid yellow;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    background-color: #AAC4FF;
+    color: #222;
+    
+}
+
+
+
+#bold1,
+#bold2,
+#bold3{
+    text-align: center;
+    font-size: 15px;
+    padding: 6px 10px 20px 9px;
+    
+}
+#italic1,
+#italic2,
+#italic3{
+    text-align: center;
+    font-size: 15px;
+    padding: 6px 10px 20px 9px;
+}
+#underline1,
+#underline2,
+#underline3{
+    text-align: center;
+    font-size: 15px;
+    padding: 6px 10px 20px 9px;
+}
+
+.active1,
+.active2,
+.active3{
+    background: greenyellow;
+    color: rgb(0, 0, 0);
+}
+
+
+.bold1,
+.bold2,
+.bold3{
+    font-weight: bold;
+}
+
+.italic1,
+.italic2,
+.italic3{
+    font-style: italic;
+}
+
+.underline1,
+.underline2,
+.underline3{
+    text-decoration: underline;
+}
+
+#bold1:hover,
+#bold2:hover,
+#bold3:hover{
+    background-color: greenyellow;
+    transition: all 0.3s ease;
+}
+
+#italic1:hover,
+#italic2:hover,
+#italic3:hover{
+    background-color: greenyellow;
+    transition: all 0.3s ease;
+}
+
+#underline1:hover,
+#underline2:hover,
+#underline3:hover{
+    background-color: greenyellow;
+    transition: all 0.3s ease;;
+}
+
+
+
+footer{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.container_footer{
+    padding: 20px;
+}
+
+
+
+
+
+
+
